@@ -1,0 +1,270 @@
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto/Roboto-Black.ttf),
+    url(assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src:url(assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* First nav styling start */
+
+.first-nav {
+    font-family: Roboto;
+    height: 64px;
+    width: 100%;
+    background-color: #E21B70;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 33vw;
+}
+
+.logo {
+    margin: 0 20px 0 0;
+}
+
+.logo img{
+    height: 7.6vh;
+    width: 100%;
+    filter: invert(100%) sepia(76%) saturate(60%) hue-rotate(150deg) brightness(114%) contrast(100%);
+}
+
+.text {
+    font-size: 0.90vw;
+    color: white;
+    margin-right: 1vw;
+}
+
+.btn button {
+    font-family: Roboto-light;
+    width: 7vw;
+    height: 5.5vh;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10px;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-right {
+    margin: 0.7vw;
+    color: white;
+}
+
+
+@media (max-width:1300px) {
+    .nav-left{
+        margin-left: 15vw;
+    }
+    .logo img {
+        height: 6vh;
+    }
+    .text h3{
+        font-size: 2.6vw;
+        font-weight: 400;
+    }
+    .btn button{
+        width: 15vw;
+        height: 5vh;
+        margin-left: 2vw;
+    }
+}
+
+@media (max-width:600px) {
+    .nav-left{
+        margin-left: 0vw;
+    }
+    .logo img {
+        display: none;
+    }
+    .text h3{
+        font-family: Roboto-light;
+        font-size: 4.5vw;
+        font-weight: 400;
+    }
+    .btn button{
+        width: 26vw;
+        margin-right: 5vw;
+    }
+}
+
+/* First nav styling End */
+
+/* Second nav styling start */
+
+.second-nav {
+    font-family: Roboto;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 10px 10px #dddcdc;
+}
+
+.sec-nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img img{
+    width: 30px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.logo-text h2 {
+    font-family: Roboto-light;
+    font-size: 1.1vw;
+    font-weight: 900;
+    color: #E21B70;
+}
+
+.sec-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-1  {
+    font-family: Roboto-light;
+    display: inline-block;
+    padding: 0.5rem 1.4rem;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+    
+}
+
+.btn-1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-1 :hover {
+    height: 4vh;
+    width: 4vw;
+    transition: 0.1s ease;
+    /* transform: scale(1.1); */
+}
+
+.btn-2 {
+    font-family: Roboto-light;
+    display: inline-block;
+    padding: 0.5rem 1.4rem;
+    border-radius: 8px;
+    background-color: #E21B70;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang svg {
+    margin-right: 5px;
+}
+
+.lang-text {
+    font-family: Roboto-light;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.lang-sec-i {
+    font-size: 24px;
+    color: #E21B70;
+}
+
+.store i{
+    font-size: 22px;
+    color: rgb(73, 73, 73);
+    margin-left: 29px;
+}
+
+
+.hero-sec{
+    display: flex;
+    align-items: center;
+}
+
+.box-container{
+    width: 100%;
+    height: 80vh;
+    background-color: #f3f0f0;
+    display: flex;
+    align-items: center;
+} 
+
+.content {
+    font-size: 40px;
+    font-weight: 600;
+    color:#333333;
+    margin-left: 80px;
+}
+
+.input{
+    height: 10vh;
+    background-color: #E21B70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content input {
+    width: 90%;
+    height: 6vh;
+}
+
+.custom-image{
+    width: 25%;
+}
+.custom-image img{ 
+    width: 800px;
+}
+
+
+
+
+
+
+
