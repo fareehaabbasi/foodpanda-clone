@@ -22,6 +22,7 @@
     height: 100%;
     width: 100%;
     position: relative;
+    overflow-y: hidden;
 }
 
 #navbars {
@@ -276,7 +277,7 @@
 
 .hero-sec {
     width: 100vw;
-    height: 65vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -319,6 +320,7 @@
     margin-top: 2vw;
     border-radius: 15px;
     box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
+    z-index: 4;
 }
 
 .content input {
@@ -369,7 +371,7 @@
     background-color: #E21B70;
     font-size: 14px;
     color: white;
-    font-weight: 700;
+    font-weight: 700; 
 }
 
 .right-box-container {
@@ -386,21 +388,47 @@
     /* margin-right: -2vw; */
     /* background-color: aqua; */
 }
+
+@media (max-width:600px) {
+    .hero-sec {
+        height: 300px;
+    }
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+    .content p {
+        font-size: 18px;
+        padding-left: 15px;
+        line-height: 26px;
+    }
+    .input {
+        margin-left: 13px;
+        margin-top: 30px;
+        background-color: #333333;
+    }
+    .custom-image img {
+        width: 280px;
+        position: absolute;
+        left: 43%;
+        top: 14%;
+    }
+}
 /* Hero section 1 */
 
 /* Hero section-2 */
 .hero-sec-2 {
     width: 100%;
     height: auto;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .hero-sec-2 h2 {
     font-size: 32px;
-    padding:4vw 15vw 0;
+    padding:4vw 15vw 1.8vw;
     display: flex;
     align-items: center;
-    background-color: #333333;
+    /* background-color: #333333; */
 }
 
 .sec-2-img img {
@@ -410,7 +438,50 @@
     object-fit: cover;
 }
 
+.sec-2-img-card {
+    width: 33%;
+    height: 38vh;
+    background-color: #ffffff;
+    position: absolute;
+    top: 85%;
+    left: 16%;
+    border-radius: 20px;
+    box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, 0.2);
 
+}
+
+.sec-2-content {
+    width: 99%;
+    /* background-color: #333333; */
+    margin: auto;
+    margin-top: 0.4vw;
+    padding: 24px;
+}
+
+.sec-2-content h3 {
+    font-family: Roboto-Light;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sec-2-content .p-1, .p-2, .p-3 {
+    font-family: Roboto-Light;
+    margin-top: 1.7vw;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.sec-2-btn {
+    font-family: Roboto-Light;
+    margin-top: 1.7vw;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    background-color: #E21B70;
+    color: #ffffff;
+    font-weight: 700;
+}
 
 
 
