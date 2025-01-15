@@ -22,12 +22,20 @@
     height: 100%;
     width: 100%;
     position: relative;
-    overflow-y: hidden;
+    /* overflow-x: hidden; */
+}
+
+@media (max-width:600px) {
+    .main {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
 }
 
 #navbars {
-    position: fixed;
-    top: 0;
+    position: sticky;
     width: 100%;
     z-index: 1000;
 }
@@ -230,7 +238,7 @@
     margin-left: 29px;
 }
 
-@media (max-width:1600px) {
+@media (max-width:1800px) {
     .sec-nav-left{
         margin: 0;
     }
@@ -276,14 +284,14 @@
 /* Hero Section Start */
 
 .hero-sec {
-    width: 100vw;
+    width: 100%;
     height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* background-color: burlywood; */
     background-color: #F7F7F7;
-    margin-top: 100px
+    /* margin-top: 100px; */
 }
 
 .left-box-container{
@@ -323,7 +331,7 @@
     z-index: 4;
 }
 
-.content input {
+#placeholder {
     font-family: Roboto-light;
     width: 81%;
     height: 5vh;
@@ -399,13 +407,30 @@
     }
     .content p {
         font-size: 18px;
-        padding-left: 15px;
-        line-height: 26px;
+        margin-top: -90px;
+        padding-left:15px;
+        line-height: 28px;
     }
     .input {
-        margin-left: 13px;
-        margin-top: 30px;
-        background-color: #333333;
+        height: 6vh;
+        position: absolute;
+        top: 31%;
+        width: 94%;
+        margin-left: 2.9vw;
+    }
+    #placeholder {
+        height: 6vh;  
+        width: 100%;
+        margin-left: 0px;
+    }
+    .under-btn {
+        padding: 0.5rem;
+        margin-right: -48vw;
+    }
+    .input-btn {
+        position: absolute;
+        top: 130%;
+        padding: 0.9rem 42.8%;
     }
     .custom-image img {
         width: 280px;
@@ -429,6 +454,12 @@
     display: flex;
     align-items: center;
     /* background-color: #333333; */
+}
+
+.long-img {
+    width: 100%;
+    height: 400px;
+    background-color: #C21760;
 }
 
 .sec-2-img img {
@@ -483,5 +514,28 @@
     font-weight: 700;
 }
 
-
-
+@media (max-width:600px) {
+    .hero-sec-2 h2 {
+        font-size: 24px;
+        /* background-color: #333333; */
+        padding: 10vw 5vw;
+    }
+    .sec-2-img-card {
+        position: absolute;
+        left: 2.2%;
+        width: 94%;
+        height: 35vh;
+        margin: auto;
+    }
+    .sec-2-img-card h3 {
+        font-family: Roboto;
+        font-size: 16px;
+    }
+    .sec-2-content .p-1, .p-2, .p-3 {
+        font-size: 14px;
+        margin-top: 7vw;
+    }
+    .sec-2-btn {
+        margin-top: 7vw;
+    }
+}
